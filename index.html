@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beginner-friendly cyber threat identification and prevention guide.">
+  <title>Cyber Threat Identification | Security Awareness</title>
+  <style>
+    :root { color-scheme: light; --navy:#102b4e; --blue:#1e5a91; --orange:#ef7d22; --paper:#f4f7fb; --ink:#1d2939; --muted:#58677b; --line:#d9e2ee; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--paper); color:var(--ink); line-height:1.6; }
+    header { background:linear-gradient(125deg,var(--navy),var(--blue)); color:white; padding:2.5rem 1rem; }
+    .wrap { max-width:1050px; margin:auto; padding:0 1rem; }
+    .eyebrow { color:#ffd2a9; font-size:.82rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:.4rem 0; font-size:clamp(2rem,5vw,3rem); line-height:1.15; }
+    header p { max-width:720px; color:#e5edf7; }
+    main { padding:1.5rem 0 3rem; }
+    .intro, .card, .checklist { background:white; border:1px solid var(--line); border-radius:14px; padding:1.25rem; margin-bottom:1rem; box-shadow:0 4px 14px #102b4e0a; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:1rem; }
+    .card { margin:0; border-top:4px solid var(--orange); }
+    .tag { display:inline-block; background:#fff1e5; color:#91450a; border-radius:999px; padding:.2rem .65rem; font-size:.78rem; font-weight:700; }
+    h2 { color:var(--navy); margin-top:0; }
+    h3 { margin:.65rem 0 .25rem; color:var(--blue); font-size:1rem; }
+    p, li { color:var(--muted); }
+    ul { padding-left:1.25rem; }
+    .note { border-left:4px solid var(--orange); padding:.5rem 1rem; background:#fff8f1; border-radius:0 8px 8px 0; }
+    footer { background:var(--navy); color:#e5edf7; padding:1.25rem 1rem; text-align:center; font-size:.9rem; }
+    footer p { color:#e5edf7; margin:.25rem; }
+    a { color:var(--blue); }
+    @media (max-width:480px) { header { padding:2rem .25rem; } .intro,.card,.checklist { padding:1rem; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Cyber Security • Internship Task 3</div>
+    <h1>Cyber Threat Identification</h1>
+    <p>Recognize common cyber threats, understand their potential impact, and learn practical ways to reduce risk.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="intro">
+    <h2>Why awareness matters</h2>
+    <p>Many security incidents begin with a deceptive message, unsafe download, manipulated request, or exposed password. Recognizing warning signs and reporting concerns early can reduce harm.</p>
+    <p class="note"><strong>Remember:</strong> Never share passwords or one-time verification codes. When a request feels urgent or unusual, verify it using a separate trusted channel.</p>
+  </section>
+  <section aria-labelledby="threats-title">
+    <h2 id="threats-title">Threat classification</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Threat 01</span><h3>Phishing</h3>
+        <p><strong>What it is:</strong> Fake messages or websites impersonating trusted sources to steal information or prompt unsafe actions.</p>
+        <p><strong>Targets:</strong> Email users, students, employees, customers.</p>
+        <p><strong>Impact:</strong> Account compromise, financial loss, data exposure.</p>
+        <p><strong>Prevention:</strong> Check sender addresses and domains, avoid unexpected links, navigate directly to known sites, report suspicious messages, and enable MFA.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Threat 02</span><h3>Malware</h3>
+        <p><strong>What it is:</strong> Malicious software such as spyware, trojans, or worms.</p>
+        <p><strong>Targets:</strong> Phones, computers, servers, organizations.</p>
+        <p><strong>Impact:</strong> Data theft, device disruption, unauthorized access.</p>
+        <p><strong>Prevention:</strong> Install updates, use reputable security tools, download from trusted sources, limit privileges, and maintain backups.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Threat 03</span><h3>Ransomware</h3>
+        <p><strong>What it is:</strong> Malware that blocks access to files or systems, often by encrypting data, and demands payment.</p>
+        <p><strong>Targets:</strong> Individuals, schools, hospitals, businesses.</p>
+        <p><strong>Impact:</strong> Downtime, data loss, recovery costs, possible data exposure.</p>
+        <p><strong>Prevention:</strong> Keep offline or immutable backups, patch systems, restrict access, train users, and test recovery plans.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Threat 04</span><h3>Social engineering</h3>
+        <p><strong>What it is:</strong> Manipulating people into revealing information or performing unsafe actions.</p>
+        <p><strong>Targets:</strong> Staff, help desks, students, administrators.</p>
+        <p><strong>Impact:</strong> Fraud, unauthorized access, information disclosure.</p>
+        <p><strong>Prevention:</strong> Verify unusual requests through a second channel, follow approval procedures, and keep sensitive details private.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Threat 05</span><h3>Credential theft</h3>
+        <p><strong>What it is:</strong> Stealing passwords, session tokens, or other login information.</p>
+        <p><strong>Targets:</strong> Email, social media, financial, and workplace accounts.</p>
+        <p><strong>Impact:</strong> Account takeover, identity misuse, further breaches.</p>
+        <p><strong>Prevention:</strong> Use unique passwords and a password manager, enable MFA/passkeys, never share one-time codes, and review login alerts.</p>
+      </article>
+    </div>
+  </section>
+  <section class="checklist">
+    <h2>What to do if you suspect an incident</h2>
+    <ul>
+      <li>Stop interacting with suspicious messages, links, attachments, or pop-ups.</li>
+      <li>Do not provide passwords or verification codes.</li>
+      <li>Report the concern to the relevant IT/security contact or platform.</li>
+      <li>If an account may be compromised, use a trusted device to change the password and revoke active sessions.</li>
+      <li>If malware is suspected, contact IT support; avoid risky self-repair and preserve relevant evidence.</li>
+      <li>Use known-good backups only after the affected system has been assessed.</li>
+    </ul>
+  </section>
+  <section class="intro">
+    <h2>Interview questions</h2>
+    <h3>What is phishing?</h3><p>Phishing is an attack where someone impersonates a trusted person or organization to trick a target into clicking a malicious link, opening an unsafe attachment, or revealing sensitive information.</p>
+    <h3>What is ransomware?</h3><p>Ransomware is malicious software that blocks access to files or systems, commonly by encrypting data, and demands payment. Payment does not guarantee recovery.</p>
+    <h3>What is social engineering?</h3><p>Social engineering uses psychological manipulation to persuade people to disclose information, grant access, or take actions that weaken security.</p>
+  </section>
+  <p><small>Educational resource • VEDA TECHNOLOGY Cyber Security Internship • Task 3. This guide is not a substitute for professional incident response.</small></p>
+</main>
+<footer><p><strong>Cyber Threat Identification</strong></p><p>Learn to recognize. Verify before acting. Report suspicious activity.</p></footer>
+</body>
+</html>
